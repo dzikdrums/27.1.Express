@@ -1,9 +1,12 @@
 {
-  "dependencies": {
-    "express": "4.17.1"
-  },
   "name": "27.1.Express",
   "version": "1.0.0",
   "main": "index.js",
-  "license": "MIT"
+  "repository": "https://github.com/dzikdrums/27.1.Express.git",
+  "author": "Maciej Dzik <dzikdrums@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1",
+    "nodemon": "^2.0.2"
+  }
 }

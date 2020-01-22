@@ -12,7 +12,11 @@ app.use((req, res, next) => {
 
 app.use(express.static(path.join(__dirname + '/public')));
 
-app.get('/' || '/home', (req, res) => {
+app.get('/', (req, res) => {
+  res.show('index.html');
+})
+
+app.get('/home', (req, res) => {
   res.show('index.html');
 })
 
