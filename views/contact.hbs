@@ -2,11 +2,8 @@
 <div class="isError">You can't leave any of forms empty!</div>
 {{/if}}
 {{#if isSent}}
-<div class="isSent">Your message has been sent!</div>
-{{/if}}
-
-{{#if author}}
-<h2>{{author}}</h2>
+<div class="isSent">Your message has been sent! File {{ filename }} has been saved</div>
+<img class="uploadedImage" src="http://localhost:8000/{{ filename }}"/>
 {{/if}}
 
 <form action="/contact/send-message" enctype="multipart/form-data" method="POST">
