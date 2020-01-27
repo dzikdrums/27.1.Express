@@ -8,19 +8,19 @@
 
 <form action="/contact/send-message" enctype="multipart/form-data" method="POST">
   <label>
-    Your name: <input type="text" name="author">
+    Your name: <input required type="text" name="author">
   </label>
   <label>
-    Your email: <input type="email" name="sender">
+    Your email: <input required type="email" name="sender">
   </label>
   <label>
-    Title: <input type="text" name="title">
+    Title: <input  required type="text" name="title">
   </label>
   <label>
-    Project design: <input type="file" name="file" accept="image/x-png,image/gif,image/jpeg,image/jpg">
+    Project design: <input  required type="file" name="file" accept="image/x-png,image/gif,image/jpeg,image/jpg">
   </label>
    <label>
-    Message: <textarea name="message"></textarea>
+    Message: <textarea  required name="message"></textarea>
   </label>
   <button type="submit">Send message</button>
 </form>
